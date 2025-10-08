@@ -10,7 +10,7 @@ function copiar_fichero_site(){
   local ruta1='/home/david/david_web/_site/*'
   local ruta2='/home/david/david_web_estatica/'
   
-  cp -R $ruta1 $ruta2
+  cp -R $ruta1 $ruta2 > /dev/null 2>&1
 
 }
 
@@ -25,7 +25,7 @@ function acciones_git(){
 }
 
 function proceso_automatizado(){
-  sudo bundle exec jekyll build > /dev/null
+  sudo bundle exec jekyll build > /dev/null 2>&1
 
   copiar_fichero_site
 
