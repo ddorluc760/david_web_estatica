@@ -15,17 +15,17 @@ function copiar_fichero_site(){
 }
 
 function acciones_git(){
-  git init
+  git init > /dev/null
   
-  git add *
+  git add * > /dev/null
 
-  git commit -m 'Cambios realizados con scripts'
+  git commit -m 'Cambios realizados con scripts' > /dev/null
 
-  git push -u origin main
+  git push -u origin main > /dev/null
 }
 
 function proceso_automatizado(){
-  sudo bundle exec jekyll build
+  sudo bundle exec jekyll build > /dev/null
 
   copiar_fichero_site
 
