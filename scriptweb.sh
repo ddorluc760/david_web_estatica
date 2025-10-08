@@ -15,13 +15,13 @@ function copiar_fichero_site(){
 }
 
 function acciones_git(){
-  git init > /dev/null
+  git init > /dev/null 2>&1
   
-  git add * > /dev/null
+  git add * > /dev/null 2>&1
 
-  git commit -m 'Cambios realizados con scripts' > /dev/null
+  git commit -m 'Cambios realizados con scripts' > /dev/null 2>&1
 
-  git push -u origin main > /dev/null
+  git push -u origin main > /dev/null 2>&1
 }
 
 function proceso_automatizado(){
